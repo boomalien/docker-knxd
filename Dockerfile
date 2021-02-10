@@ -17,7 +17,6 @@ COPY root/ /
 
 # Ports and volumes
 EXPOSE 3671/udp
-EXPOSE 3672/udp
 EXPOSE 6720
 VOLUME /config
 
