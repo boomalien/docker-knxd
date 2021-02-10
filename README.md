@@ -10,9 +10,9 @@ exposed ports:
 - 3671 udp
 
 ### run command
-docker run -d \
-  --name knxd \
-  --net=host \
-  -v /smartHome/applications/knxd/knxd.ini:/config/knxd.ini \
+docker run -d \\\
+  --name knxd \\\
+  --net=host \\\
+  -v /smartHome/applications/knxd/knxd.ini:/config/knxd.ini \\\
   boomalien/docker-knxd
   
