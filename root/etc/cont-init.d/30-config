@@ -1,0 +1,13 @@
+#!/usr/bin/with-contenv bash
+
+# make folders
+mkdir -p \
+	/config
+
+# copy config
+[[ ! -e /config/knxd.ini ]] && \
+	cp /defaults/knxd.ini /config/knxd.ini
+
+# permissions
+chown -R abc:abc \
+	/config
